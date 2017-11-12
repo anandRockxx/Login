@@ -12,7 +12,7 @@ include_once 'footer.php';
 
 	<div class="form-container">
 		
-		<form action="signup.php" method="post">
+		<form action="signup.inc.php" method="post">
 		<input type="text" name="user_uid" placeholder="Username" required="true">
 		<br>
 		<input type="text" name="user_first" placeholder="First Name" required="true">
