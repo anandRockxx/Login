@@ -2,7 +2,6 @@
 
 include_once 'header.php';
 include_once 'footer.php';
-
  ?>
 
 
@@ -12,18 +11,18 @@ include_once 'footer.php';
 
 	<div class="form-container">
 		
-		<form action="signup.inc.php" method="post">
-		<input type="text" name="user_uid" placeholder="Username" required="true">
+		<form action="inc/signup.php" method="post">
+		<input type="text" name="user_uid" placeholder="Username">
 		<br>
-		<input type="text" name="user_first" placeholder="First Name" required="true">
+		<input type="text" name="user_first" placeholder="First Name">
 		<br>
-		<input type="text" name="user_last" placeholder="Last Name" required="true">
+		<input type="text" name="user_last" placeholder="Last Name">
 		<br>
-		<input type="text" name="user_email" placeholder="Email" required="true">
+		<input type="text" name="user_email" placeholder="Email">
 		<br>
-		<input type="password" name="pwd" placeholder="Password" required="true">
+		<input type="password" name="pwd" placeholder="Password">
 		<br>
-		<button type="submit" name="sign_up">sign up</button>
+		<button type="submit" name="submit">sign up</button>
 		</form>
 	</div>
 </div>
