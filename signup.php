@@ -1,8 +1,6 @@
 <?php 
-
 include_once 'header.php';
-include_once 'footer.php';
- ?>
+?>
 
 
 <div class="sign_up_form">
@@ -11,20 +9,25 @@ include_once 'footer.php';
 
 	<div class="form-container">
 		
-		<form action="inc/signup.php" method="post">
-		<input type="text" name="user_uid" placeholder="Username">
+		<form action="account/signup.php" method="post">
+
+		<input id="user" type="text" name="user_uid" placeholder="Username">
 		<br>
-		<input type="text" name="user_first" placeholder="First Name">
+		<input id="first_name" type="text" name="user_first" placeholder="First Name">
 		<br>
-		<input type="text" name="user_last" placeholder="Last Name">
+		<input id="last_name" type="text" name="user_last" placeholder="Last Name">
 		<br>
-		<input type="text" name="user_email" placeholder="Email">
+		<input id="email_id" type="text" name="user_email" placeholder="Email">
 		<br>
-		<input type="password" name="pwd" placeholder="Password">
+		<input id="user_password" type="password" name="pwd" placeholder="Password">
 		<br>
-		<button type="submit" name="submit">sign up</button>
+		<button id="sub-btn" type="submit" name="submit">sign up</button>
+
+		<div id="result"></div>
 		</form>
 	</div>
 </div>
 
-
+<?php 
+include_once 'footer.php';
+?>
